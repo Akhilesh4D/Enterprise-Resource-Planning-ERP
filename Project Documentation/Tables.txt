@@ -1,0 +1,49 @@
+Tables required for ERP systems
+
+select * from Users;
+select * from Roles;
+select * from Permissions;
+select * from UserRoles;
+select * from RolePermissions;
+select * from Employees;
+select * from Departments;
+select * from Projects;
+select * from Tasks;
+select * from Attendance;
+select * from Payroll;
+select * from Assets;
+select * from AuditLogs;
+select * from Expenses;
+select * from Invoices;
+select * from LeaveRequests;
+select * from Meetings;
+select * from Notifications;
+select * from Payments;
+select * from PerformanceReviews;
+select * from Tranining;
+select * from Traniningsessions;
+
+
+
+--1.Users 
+--2.Roles 
+--3.Permissions 
+--4.UserRoles 
+--5.RolePermissions 
+--6.Employees 
+--7.Departments 
+--8.Projects 
+--9.Tasks 
+--10.Attendance 
+--11.Payroll 
+--12.Assets
+--13.AuditLogs
+--14.Expenses
+--15.Invoices
+--16.LeaveRequests
+--17.Meetings
+--18.Notifications
+--19.Payments
+--20.Payroll
+--21.PerformanceReviews
+--22.Tranining sessions
