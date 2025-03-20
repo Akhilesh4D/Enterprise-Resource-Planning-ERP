@@ -39,10 +39,12 @@ namespace ERP.DAL
             return param.Get<int>("NewId");
         }
 
-        public async Task<bool> UpdateAsync(string storedProcedure, object parameters)
+        public async Task<bool> UpdateAsync(string storedProcedure, object parameters, int id)
         {
             using var connection = CreateConnection();
-            return await connection.ExecuteAsync(storedProcedure, parameters, commandType: CommandType.StoredProcedure) > 0;
+            var param = new DynamicParameters(parameters);
+            param.Add("@Id", id); // Make sure @Id is added to param, not just parameters
+            return await connection.ExecuteAsync(storedProcedure, param, commandType: CommandType.StoredProcedure) > 0;
         }
 
         public async Task<bool> DeleteAsync(string storedProcedure, int id)
